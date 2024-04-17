@@ -1,0 +1,123 @@
+<?php include('server.php') ?>
+<!doctype html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <base href="/">
+    
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta http-equiv="”Cache-Control”" content="”no-cache,no-store,must-revalidate”">
+    <meta http-equiv="”Pragma”" content="”no-cache”">
+    <meta http-equiv="”Expires”" content="”0&quot;">
+    
+    <title>ONMAXDT PORTAL</title>
+    
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link href="../../assets/css/skins.css" rel="stylesheet">
+    <link href="../../assets/css/dark-style.css" rel="stylesheet">
+    
+    
+    <link id="theme" href="../../assets/css/colors/color4.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    </head>
+    <body class="dark-theme">
+        <script>
+            const body = document.body;
+    
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            body.classList.replace('', 'dark-theme');
+            } else {
+            body.classList.remove('dark-theme');
+            }
+    
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+            if (e.matches) {
+                document.documentElement.setAttribute('dark-theme', 'dark');
+                body.classList.replace('', 'dark-theme');
+            } else {
+                document.documentElement.setAttribute('dark-theme', '');
+                body.classList.remove('dark-theme');
+            }
+            });
+        </script>
+    <app-root _nghost-yny-c154="" ng-version="11.0.6">
+        <router-outlet _ngcontent-yny-c154="">
+            <app-loader _ngcontent-yny-c154="" _nghost-yny-c152="">
+                <!---->
+            </app-loader>
+        </router-outlet>
+        <app-authentication _nghost-yny-c53="">
+            <div _ngcontent-yny-c53="" class="page main-signin-wrapper">
+                <div _ngcontent-yny-c53="" class="row signpages text-center">
+                    <div _ngcontent-yny-c53="" class="col-md-12">
+                        <div _ngcontent-yny-c53="" class="card">
+                            <div _ngcontent-yny-c53="" class="row row-sm">
+                                <div _ngcontent-yny-c53="" class="col-lg-6 col-xl-5 d-none d-lg-block text-center bg-primary details">
+                                    <div _ngcontent-yny-c53="" class="mt-5 pt-4 p-2 pos-absolute">
+                                        <img _ngcontent-yny-c53="" src="../../assets/img/brand/logo-light.png" alt="logo" class="header-brand-img mb-4">
+                                        <div _ngcontent-yny-c53="" class="clearfix">
+
+                                        </div>
+                                        <img _ngcontent-yny-c53="" src="../../assets/img/svgs/user.svg" alt="user" class="ht-100 mb-0">
+                                        <h5 _ngcontent-yny-c53="" class="mt-4 text-white">Create Your Account</h5>
+                                        <span _ngcontent-yny-c53="" class="tx-white-6 tx-13 mb-5 mt-xl-0">Signup to create, discover and connect with the global community</span>
+                                    </div>
+                                </div>
+                                <div _ngcontent-yny-c53="" class="col-lg-6 col-xl-7 col-xs-12 col-sm-12 login_form">
+                                    <div _ngcontent-yny-c53="" class="container-fluid">
+                                        <div _ngcontent-yny-c53="" class="row row-sm">
+                                            <div _ngcontent-yny-c53="" class="card-body mt-2 mb-2">
+                                                <img _ngcontent-yny-c53="" src="../../assets/img/brand/logo.png" alt="logo" class="d-lg-none header-brand-img text-left float-left mb-4">
+                                                <div _ngcontent-yny-c53="" class="clearfix">
+
+                                                </div>
+                                                <form _ngcontent-yny-c53="" action="login.php" novalidate="" class="ng-untouched ng-pristine ng-invalid" method="post">
+                                                    <h5 _ngcontent-yny-c53="" class="text-left mb-2">Sign in to Your Account</h5>
+                                                    <p _ngcontent-yny-c53="" class="mb-4 text-muted tx-13 ml-0 text-left">Signin to create, discover and connect with the global community</p>
+                                                    <div _ngcontent-yny-c53="" class="form-group text-left">
+                                                        <label _ngcontent-yny-c53="">Username</label>
+                                                        <input _ngcontent-yny-c53="" formcontrolname="username" type="text" name="username" class="form-control ng-untouched ng-pristine ng-invalid">
+                                                        <!---->
+                                                        <bfv-messages _nghost-yny-c43="">
+                                                            <!---->
+                                                        </bfv-messages>
+                                                        <!---->
+                                                    </div>
+                                                    <div _ngcontent-yny-c53="" class="form-group text-left">
+                                                        <label _ngcontent-yny-c53="">Password</label>
+                                                        <input _ngcontent-yny-c53="" formcontrolname="password" type="password" class="form-control ng-untouched ng-pristine ng-invalid" name="password">
+                                                        <!---->
+                                                        <bfv-messages _nghost-yny-c43="">
+                                                            <!---->
+                                                        </bfv-messages>
+                                                        <!---->
+                                                    </div>
+                                                    <input type="submit" name="submit" value="Sign In" class="btn btn-primary btn-block">
+                                                </form>
+                                                <div _ngcontent-yny-c53="" class="text-left mt-5 ml-0">
+                                                    <div _ngcontent-yny-c53="" class="mb-1">
+                                                        <a _ngcontent-yny-c53="" href="https://portal.onmaxdt.com/#/security/forgot-password">Forgot password?</a>
+                                                    </div>
+                                                    <div _ngcontent-yny-c53="">Don't have an account? <a _ngcontent-yny-c53="" href="https://portal.onmaxdt.com/#/registration">Register Here</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    </body></html>
